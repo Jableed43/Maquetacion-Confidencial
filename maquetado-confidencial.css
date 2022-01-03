@@ -1,0 +1,397 @@
+ /* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+@font-face {
+    font-family: "GROTESK-BOLD";
+    src: url(fuente/GROTESK-BOLD/Alte-Haas-Grotesk-Bold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+p.bold{
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.linea {
+  border-top: 1px solid #E2E7EE;
+  height: 2px;
+  padding: 0;
+  width: 98vw;
+}
+
+.linea-vertical {
+  border-left: 1px solid #E2E7EE;
+  margin: 0 27px;
+}
+
+ul li{
+  list-style: none;
+}
+
+.bold{
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER */
+
+  /* HEADER TOP */
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.header-top p{
+  font-size: 17px;
+}
+
+.header-top i{
+  font-size: 25px;
+}
+
+.header-top div ul{
+    margin: 15px 0;
+}
+
+.header-top ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.climate-time{
+  width: 40%;
+  color: #717171
+}
+
+li.clima{
+  display: flex;
+  flex-direction: row;
+}
+
+.fas.fa-cloud-sun {
+  transform: scaleX(-1);
+}
+
+.newsletter {
+  width: 33%;
+  color: #717171;
+  font-weight: bold;
+}
+
+i, .boletin{
+  cursor: pointer;
+
+}
+
+.climate-time li, .newsletter li{
+  margin: 0 12px;
+  }
+
+    /* LOGO */
+
+.header-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo a{
+  text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo img{
+  width: 80%;
+  margin: 25px 0px;
+}
+
+  /* HEADER NAV-BAR */
+
+.header-nav{
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav div{
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav ul li{
+margin: 10px 15px 20px;
+font-weight: bold;
+}
+
+.header-nav ul li:hover{
+color: #76828f;
+}
+
+.header-nav a{
+  color: black;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header-nav a:hover{
+  color: #2C4F76;
+}
+
+/* MAIN */
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .linea{
+  width: 100%;
+}
+
+main div{
+  font-size: 25px;
+}
+
+  /* DESTACADO */
+
+
+.fas.fa-circle{
+  color: #A82E32;
+  font-size: 18px;
+}
+
+.blue-destacado{
+  color: #2C4F76;
+  font-weight: bold;
+  font-family: "GROTESK-BOLD";
+
+    }
+
+.blue{
+color: #2C4F76;
+font-weight: bold;
+margin: 15px 0;
+}
+
+h3.blue{
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.destacados{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px;
+  margin: 35px 0;
+}
+
+p.destacados a{
+  color: black;
+}
+
+.destacados i{
+  margin: 5px;
+}
+
+  /* SECCIONES */
+
+
+.side-left-section, .middle-section, .side-right-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.side-left-section {
+  width: 27%;
+}
+
+.side-left-section article h1{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+
+.side-right-section{
+width: 20%;
+}
+
+.middle-section{
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+
+  /* IMAGENES */
+
+.img-p{
+  display: flex;
+}
+
+.img-1{
+  width: 100%;
+}
+
+.img1-p{
+  font-size: 30px;
+}
+
+.div-img-2{
+  display: flex;
+}
+
+.img-2{
+  width: 100%;
+}
+
+.img-3{
+  width: 44%;
+  margin-right: 10px;
+}
+
+.img-4{
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* MEDIAQUERIES */
+
+
+@media (min-width: 768px) and (max-width: 959px) {
+  p{
+    font-size: 13px;
+  }
+
+  .header-top div ul {
+    margin: 15px 0;
+  }
+
+  .header-top p {
+    font-size: 12px;
+  }
+
+  .newsletter {
+    width: 40%;
+  }
+  
+  .climate-time {
+    width: 50%;
+  }
+
+  .header-nav a {
+    font-size: 11px;
+  }
+
+  .side-left-section article h1, .bold, p.bold{
+    font-size: 16px;
+  }
+
+  .side-right-section {
+    width: 23%;
+  }
+
+
+  h3.blue {
+    font-size: 15px;
+  }
+
+
+  .img-1 {
+    width: 107%;
+  }
+
+  .img1-p {
+    font-size: 18px;
+  }
+
+  .img-4 {
+    width: 93%;
+    margin-top: 10px;
+  }
+
+}
+
+@media (min-width: 960px ) and (max-width: 1300px ) {
+  p {
+    font-size: 15px;
+  }
+
+  h3.blue{
+    font-size: 18px;
+  }
+
+  .header-nav a {
+    font-size: 13px;
+  }
+
+  .header-top div ul {
+    margin: 15px 10px;
+  }
+  
+  .header-top p {
+    font-size: 15px;
+  }
+
+  .newsletter {
+    width: 40%;
+}
+
+  .climate-time li, .newsletter li {
+    margin: 0 12px;
+  }
+
+  .climate-time {
+    width: 46%;
+  }
+
+  .side-left-section article h1, .bold, p.bold{
+    font-size: 16px;
+  }
+
+  .side-right-section {
+    width: 25%;
+  }
+
+  .img-1, .img-4 {
+    width: 103%;
+  }
+
+  .img1-p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-nav a {
+    font-size: 16px;
+}
+
+}
