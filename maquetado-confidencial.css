@@ -21,6 +21,11 @@ p{
   font-family: "Open Sans", sans-serif;
 }
 
+.bold{
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
 p.bold{
   font-size: 30px;
   letter-spacing: -1px;
@@ -42,10 +47,7 @@ ul li{
   list-style: none;
 }
 
-.bold{
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-}
+
 
 /* HEADER */
 
@@ -55,14 +57,6 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-
-.header-top p{
-  font-size: 17px;
-}
-
-.header-top i{
-  font-size: 25px;
 }
 
 .header-top div ul{
@@ -70,10 +64,18 @@ ul li{
 }
 
 .header-top ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top p{
+  font-size: 17px;
+}
+
+.header-top i{
+  font-size: 25px;
 }
 
 .climate-time{
@@ -96,14 +98,14 @@ li.clima{
   font-weight: bold;
 }
 
+.climate-time li, .newsletter li{
+  margin: 0 12px;
+  }
+
 i, .boletin{
   cursor: pointer;
 
 }
-
-.climate-time li, .newsletter li{
-  margin: 0 12px;
-  }
 
     /* LOGO */
 
@@ -189,8 +191,7 @@ main div{
   color: #2C4F76;
   font-weight: bold;
   font-family: "GROTESK-BOLD";
-
-    }
+}
 
 .blue{
 color: #2C4F76;
@@ -240,15 +241,16 @@ p.destacados a{
   letter-spacing: -1px;
 }
 
-.side-right-section{
-width: 20%;
-}
-
 .middle-section{
   width: 33%;
   display: flex;
   align-items: center;
 }
+
+.side-right-section{
+width: 20%;
+}
+
 
   /* IMAGENES */
 
